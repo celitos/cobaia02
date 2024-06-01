@@ -1,4 +1,4 @@
-; hello-DOS.asm - single-segment, 16-bit "hello world" program
+; hello-DOS.asm - single-segment, 16-bit "howdy" program
 ;
 ; assemble with "nasm -f bin -o hi.com hello-DOS.asm"
 
@@ -13,4 +13,4 @@
     mov  ah, 0x4c     ; "terminate program" sub-function
     int  0x21         ; call dos services
 
-    msg  db 'Hello, World!', 0x0d, 0x0a, '$'   ; $-terminated message
+    msg  db 'howdy', 0x0d, 0x0a, '$'   ; $-terminated message
